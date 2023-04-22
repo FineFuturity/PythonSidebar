@@ -21,10 +21,10 @@ label = tk.Label(text='My Label', font=('Arial', 12), bg='white')
 sidebar.add_widget(label)
 ```
 
-Widgets added to the sidebar can optionally have a hide/show button associated with them.  This is set via the `canhide` attribute when adding a widget, shown below using the previous example.
+By default, widgets added to the sidebar are not hideable.  Widgets can optionally have a hide/show button associated with them via the `canhide` attribute when adding them, shown below using the previous example. 
 
 ```
-sidebar.add_widget(label)
+sidebar.add_widget(label, canhide=True)
 ```
 
 You can also remove widgets from the sidebar using the remove_widget method.
