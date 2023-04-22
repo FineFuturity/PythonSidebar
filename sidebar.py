@@ -102,43 +102,9 @@ if __name__ == '__main__':
     top_tree.column('#1', width=int(WIDTH/2)-1, stretch = False)
     top_tree.column('#2', width=int(WIDTH/2)-1,  stretch = False)
     top_tree.bind('<Motion>', 'break')
-    # sidebar.add_widget(label)
-    # sidebar.add_widget(button)
+    sidebar.add_widget(label)
+    sidebar.add_widget(button)
     sidebar.add_widget(top_tree, canhide=False)
 
     # top_bar.pack_propagate(False)
     root.mainloop()
-
-# import tkinter as tk
-
-
-
-# class Sidebar:
-#     def __init__(self, root, width):
-#         self.root = root
-#         self.frame = tk.Frame(self.root, width=width, bg='gray')
-#         self.frame.pack(side='right', fill='y')
-#         self.frame.pack_propagate(False)  # Prevent automatic resizing
-#         self.widgets = []
-
-#     def add_widget(self, widget):
-#         # Add a widget to the sidebar
-#         widget.pack(side='top', fill='x')
-#         self.widgets.append(widget)
-
-#     def remove_widget(self, widget):
-#         # Remove a widget from the sidebar
-#         widget.pack_forget()
-#         self.widgets.remove(widget)
-
-
-# if __name__ == '__main__':
-#     root = tk.Tk()
-#     root.geometry("800x600")
-#     root.title('Sidebar Example')
-#     sidebar = Sidebar(root, 200)
-#     label = tk.Label(sidebar.frame, text='My Widgets', font=('Arial', 12), bg='gray')
-#     button = tk.Button(sidebar.frame, text='Click me', font=('Arial', 12), bg='#f0f0f0', command=lambda: print('Button clicked!'))
-#     sidebar.add_widget(label)
-#     sidebar.add_widget(button)
-#     root.mainloop()
