@@ -1,4 +1,4 @@
-This is a project to provide a custom sidebar for use in Tkinter programs.  Very basic in its current iteratio
+This is an API to provide a custom sidebar for use in Tkinter programs.  Very basic in its current iteration and, as such, is a work in progress.
 
 ## Prerequisites
 You will need to have Python 3 and tkinter installed on your system in order to run this program.
