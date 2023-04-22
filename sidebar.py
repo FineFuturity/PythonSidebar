@@ -15,7 +15,7 @@ class Sidebar:
         self.is_hidden = False # Track the visibility of the sidebar
 
     def add_widget(self, widget, canhide=True):
-        # Add a widget to the 
+        # Add space between each widget with an empty frame
         spacer = tk.Frame(self.frame, bg='gray', height=5)
         spacer.pack(side='top', fill='x')
 
